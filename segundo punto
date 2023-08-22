@@ -1,3 +1,5 @@
+Package Nombreproyecto;
+
 public class NumerosPrimosYDivisores {
     // Función para verificar si un número es primo
     public static boolean esPrimo(int numero) {
