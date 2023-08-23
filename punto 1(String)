@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Punto1 {
+	public static void main(String[] args) {
+    Scanner scanner= new Scanner(System.in);
+    System.out.println("ingrese su nombre: ");
+    String nombre=scanner.next();
+    System.out.println("su nombre es: " + nombre);
+    scanner.close();
+	}
+}
