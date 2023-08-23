@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Punto4 {
+	public static void main(String[] args){
+        Scanner scanner= new Scanner(System.in);
+        int i1 = 0;
+		do{
+        try{
+        	System.out.println("ingrese una opcion a realizar(1-suma,2-resta,3-multiplicacion,4-division");
+            int i = scanner.nextInt();
+            System.out.println("ingrese el primer valor: ");
+            int num1 = scanner.nextInt();
+            System.out.println("ingrese el segundo valor: ");
+            int num2= scanner.nextInt();
+            switch(i){
+                case 1:
+                int numero=num1 + num2;
+                System.out.println("el valor de la suma es: " + numero);
+                break;
+                case 2:
+                int numero1= num1 - num2;
+                System.out.println("El valor de la resta es:  " + numero1);
+                break;
+                case 3:
+                int numero2 = num1 * num2;
+                System.out.println("El valor de la multiplicacion es:  " + numero2 );
+                break;
+                case 4:
+                int numero3 = num1 / num2;
+                System.out.println("El valor de la multiplicacion es:  " + numero3);
+                break;
+                default:
+                System.out.println("El valor que usted ingreso no es el solicitado, pruebe nuevamente");
+            }
+        }catch(Exception e){
+            System.out.println("ERROR: " + e);
+        }
+        System.out.println("Quiere seguir utilizando la calculadora. 1-si/2-no");
+        i1 =scanner.nextInt();
+    }while(i1 != 2);
+	    scanner.close();
+    }
+}
