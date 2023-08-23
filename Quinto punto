@@ -1,0 +1,11 @@
+public class Punto5 {
+    public static void main(String[] args) {
+        // Se crea un arreglo de cadenas
+        String[] nombres = {"Lucas", "Tobias", "Jacobo", "Valentino", "Goku"};
+        // Se usa un bucle for-each para iterar a través de los elementos del arreglo
+        for (String nombre : nombres) {
+            // "nombre" tomará el valor de cada elemento del arreglo en cada iteración
+            System.out.println("Hola, " + nombre + "!");
+        }
+    }
+}
